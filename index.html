@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Accordion</title>
+</head>
+<body class="w-screen h-screen bg-backgroundImg bg-cover bg-center backdrop-blur">
+    <div class="accordian h-screen flex items-center justify-center">
+        <div class="text-black bg-white items-center p-10 rounded-3xl max-w-2xl">
+            <h1 class="accordian-title text-4xl font-bold mb-5">Frequently Asked Questions</h1>    
+            <div class="question text-blue text-2xl py-4">What is the return policy?<i class="fa-solid fa-plus float-right text-xl pt-1.5"></i></div>
+            <div class="answer text-2xl hidden pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>   
+            <hr class="border-2 border-gray-500">
+            <div class="question text-blue text-2xl py-4">When will I receive my order?<i class="fa-solid fa-plus float-right text-xl pt-1.5"></i></div>
+            <div class="answer text-2xl hidden pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <hr class="border-2 border-gray-500">
+            <div class="question text-blue text-2xl py-4">Where are you located?<i class="fa-solid fa-plus float-right text-xl pt-1.5"></i></div>
+            <div class="answer text-2xl hidden pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <hr class="border-2 border-gray-500">
+          </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                backgroundImage: {
+                    'backgroundImg': "url('questionMarkBackground.jpeg')",
+                },
+                colors: {
+                    clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
